@@ -28,6 +28,10 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 # Inherit from device
 $(call inherit-product, device/qualcomm/sdm455_64/device.mk)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-cherish
+
 PRODUCT_NAME := cherish_sdm455_64
 PRODUCT_DEVICE := sdm455_64
 PRODUCT_MANUFACTURER := Qualcomm
