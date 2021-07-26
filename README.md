@@ -1,1 +1,1 @@
-##### Common Tree for Nokia SDM660 Based Devices
+##### Android device tree for Qualcomm SDM455 Engineering Device
