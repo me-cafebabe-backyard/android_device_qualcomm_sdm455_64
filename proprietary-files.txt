@@ -1,5 +1,6 @@
 ## Common proprietary files
-## From Nokia/Plate2_00WW/PL2_sprout:10/QKQ1.190828.002/00WW_4_15O:user/release-keys unless pinned
+## Unpinned files are from Nokia/Plate2_00WW/PL2_sprout:10/QKQ1.190828.002/00WW_4_15O:user/release-keys unless pinned
+## Qualcomm Package version: Android/sdm660_64/sdm660_64:9/PKQ1.180819.001/lnxbuild09061340:userdebug/test-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -36,6 +37,9 @@ vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+
+# ADSP (Modules) - from Qualcomm
+vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
