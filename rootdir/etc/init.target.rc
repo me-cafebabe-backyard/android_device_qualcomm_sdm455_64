@@ -27,6 +27,9 @@
 #
 #
 
+on post-fs-data
+   mkdir /data/vendor/hbtp 0750 system system
+
 service vendor.qseecomd /vendor/bin/qseecomd
    class core
    user root
