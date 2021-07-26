@@ -607,6 +607,10 @@ vendor/firmware/a508_zap.mdt
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
+# Graphics (Firmware - Adreno) - from Qualcomm
+vendor/firmware/a512_zap.b01
+vendor/firmware/a512_zap.mdt
+
 # Keymaster (QTI)
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
