@@ -114,12 +114,6 @@ on late-fs
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
-    # Change permission for fingerprint sensor
-    chown system oem_5004 /sys/devices/soc/soc:fpc_fpc1020/nav
-    chown system oem_5004 /sys/devices/soc/soc:fpc_fpc1020/dev_enable
-    chown system oem_5004 /sys/devices/soc/soc:fpc_fpc1020/irq
-    chown system oem_5004 /sys/devices/soc/soc:fpc_fpc1020/irq_cnt
-    chmod 0440 /sys/devices/soc/soc:fpc_fpc1020/irq_cnt
     # MOT_LED_CALIBRATION
     chown cameraserver /mnt/vendor/persist/camera/ledcal
     restorecon_recursive   /carrier
@@ -482,9 +476,6 @@ on post-fs-data
     #Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
 
-    # Fingerprint
-    mkdir /data/system/fingerprint 0770 system system
-
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
     mkdir /data/vendor/tombstones/rfs 0700 system system
@@ -715,10 +706,6 @@ on post-fs-data
 
     # NFC vendor data
     mkdir /data/vendor/nfc 0770 nfc nfc
-
-    # Required by FingerPrint Cards (FPC) via init so we don't need to give qseecomd or fingerprintd permissions to create them
-    mkdir /data/vendor/fpc 0700 system system
-    mkdir /data/vendor/.fps 0770 system input
 
     #Create directory for adspd
     mkdir /data/adspd 0770 audio diag
@@ -1130,18 +1117,6 @@ service vendor.imsrcsservice /vendor/bin/imsrcsd
 
 on property:vendor.ims.DATA_DAEMON_STATUS=1
     restart vendor.ims_rtp_daemon
-
-service vendor.init_wifi /vendor/bin/wlan_carrier_bin.sh
-    class main
-    user root
-    group root
-    oneshot
-
-on property:ro.carrier=tmo
-    write /sys/class/power_supply/battery/device/force_max_chrg_temp 55
-
-on property:ro.carrier=metropcs
-    write /sys/class/power_supply/battery/device/force_max_chrg_temp 55
 
 # translate to qcom property name in order to keep the consistent with
 # our legacy property

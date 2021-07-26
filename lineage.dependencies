@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_kernel_nokia_sdm660",
-    "target_path": "kernel/nokia/sdm660"
+    "repository": "android_kernel_qualcomm_sdm660-4.4",
+    "target_path": "kernel/qualcomm/sdm660-4.4"
   }
 ]
