@@ -152,6 +152,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5 \
+    libgui_vendor \
     vendor.qti.hardware.camera.device@1.0
 
 PRODUCT_PACKAGES += \
