@@ -71,20 +71,10 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
             done
             ;;
-        vendor/etc/nfcee_access.xml)
-            sed -i 's|xliff="urn:oasis:names:tc:xliff:document:1.2"|android="http://schemas.android.com/apk/res/android"|' "${2}"
-            ;;
         # Fix missing symbols
         vendor/lib/libgui_vendor.so)
             for LIBGUI_SHIM in $(grep -L "libgui_shim_vendor.so" "${2}"); do
                 "${PATCHELF}" --add-needed "libgui_shim_vendor.so" "${LIBGUI_SHIM}"
-            done
-            ;;
-        vendor/lib/hw/camera.sdm660.so)
-            for  MEGVII_SHIM in $(grep -L "libshim_megvii.so" "${2}"); do
-                "${PATCHELF}" --remove-needed "libMegviiFacepp.so" "$MEGVII_SHIM"
-                "${PATCHELF}" --remove-needed "libmegface-new.so" "$MEGVII_SHIM"
-                "${PATCHELF}" --add-needed "libshim_megvii.so" "$MEGVII_SHIM"
             done
             ;;
     esac

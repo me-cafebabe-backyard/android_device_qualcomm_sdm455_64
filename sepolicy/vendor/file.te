@@ -1,15 +1,3 @@
-# FIH Partitions
-type fih_partition, dev_type;
-
-# /dev/elanfp
-type sysfs_fingerprint, sysfs_type, fs_type;
-
-# /proc/devmodel
-type proc_fih, fs_type, proc_type;
-
-# /proc/bandinfo
-type proc_bandinfo, proc_type, fs_type;
-
 # rtc
 type sysfs_msm_subsys, sysfs_type, fs_type;
 

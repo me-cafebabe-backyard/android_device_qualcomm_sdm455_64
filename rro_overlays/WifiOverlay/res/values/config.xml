@@ -71,7 +71,7 @@
     <string  translatable="false" name="config_wifi_framework_sap_2G_channel_list">1,6,11</string>
 
     <!-- Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Nokia</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Qualcomm SDM455</string>
 
     <!-- Enable WPA2 to WPA3 auto-upgrade -->
     <bool translatable="false" name="config_wifiSaeUpgradeEnabled">false</bool>
