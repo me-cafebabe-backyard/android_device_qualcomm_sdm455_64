@@ -95,27 +95,6 @@ vendor/lib64/soundfx/libqcvirt.so
 # Audio (ACDB)
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# Audio (firmware - T9891)
-vendor/firmware/T9891M04.drc
-vendor/firmware/T9891M04.vstep
-vendor/firmware/T9891R04.drc
-vendor/firmware/T9891R04.vstep
-vendor/firmware/T9891S04.drc
-vendor/firmware/T9891S04.vstep
-vendor/firmware/T9891V04.drc
-vendor/firmware/T9891V04.vstep
-
-# Audio (Firmware - TFA9891-94)
-vendor/firmware/TFA9891.cnt
-vendor/firmware/TFA9891.cnt_preformat.ini
-vendor/firmware/TFA9891.ini
-vendor/firmware/TFA9891.speaker
-vendor/firmware/TFA9891N1A_Dec2015.config
-vendor/firmware/TFA9891_N1A_11_1_31_NL3_HQ.patch
-
-# Audio (Firmware - TAS2557)
-vendor/firmware/TAS2557MSSMono.bin
-
 # Audio (Hardware)
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.sdm660.so
@@ -559,9 +538,6 @@ vendor/firmware/a508_zap.b01
 vendor/firmware/a508_zap.mdt
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
-
-# Graphics (Firmware - Focaltech)
-vendor/firmware/TP_Firmware_FT8716.bin
 
 # Keymaster (QTI)
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
