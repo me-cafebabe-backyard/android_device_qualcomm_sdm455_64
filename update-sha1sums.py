@@ -20,8 +20,8 @@ import os
 import sys
 from hashlib import sha1
 
-device='sdm660-common'
-vendor='nokia'
+device='sdm455_64'
+vendor='qualcomm'
 
 with open('proprietary-files.txt', 'r') as f:
     lines = f.read().splitlines()
