@@ -246,10 +246,6 @@
     <!-- Mask to use when checking skb mark defined in config_networkWakeupPacketMark above. -->
     <integer name="config_networkWakeupPacketMask">0x80000000</integer>
 
-    <!-- Setting this true forces the headset jack switches to use the/dev/input/event subsystem
-         rather than the uevent framework. -->
-    <bool name="config_useDevInputEventForAudioJack">true</bool>
-
    <!-- Enable doze mode
          ComponentName of a dream to show whenever the system would otherwise have gone to sleep. -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
