@@ -16,9 +16,6 @@
 
 DEVICE_PATH := device/qualcomm/sdm455_64
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/qualcomm/sdm455_64/sdm455_64-vendor.mk)
 
