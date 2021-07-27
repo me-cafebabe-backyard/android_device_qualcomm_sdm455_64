@@ -1138,7 +1138,6 @@ service vendor.hbtp /vendor/bin/hbtp_daemon
      user system
      group system
      capabilities SYS_NICE
-     disabled
 
 # imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
 service vendor.imsqmidaemon /vendor/bin/imsqmidaemon
