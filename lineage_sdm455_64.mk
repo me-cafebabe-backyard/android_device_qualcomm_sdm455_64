@@ -28,6 +28,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from device
 $(call inherit-product, device/qualcomm/sdm455_64/device.mk)
 
+DEVICE_PATH := device/qualcomm/sdm455_64
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay-lineage
+
 PRODUCT_NAME := lineage_sdm455_64
 PRODUCT_DEVICE := sdm455_64
 PRODUCT_MANUFACTURER := Qualcomm
