@@ -29,6 +29,11 @@ import /vendor/etc/init/hw/init.msm.usb.configfs.rc
 import /vendor/etc/init/hw/init.target.rc
 import /vendor/etc/init/hw/init.${ro.boot.device}.target.rc
 
+service mylogcat /system/bin/logcat -f /data/mylogcat.log
+    user root
+    group root
+    class core
+
 on early-init
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
@@ -443,6 +448,8 @@ on boot
     #sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
+
+    write /sys/class/leds/green/brightness 200
 
 # msm specific files that need to be created on /data
 on post-fs-data
