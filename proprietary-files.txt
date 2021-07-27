@@ -624,7 +624,7 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
-# Sensors
+# Sensors - from Qualcomm
 vendor/bin/sensors.qti
 vendor/etc/sap.conf
 vendor/lib/libsensor1.so
@@ -633,7 +633,7 @@ vendor/lib64/libsensor_reg.so
 vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.ssc.so
 
-# Thermal
+# Thermal - from Qualcomm
 vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
 -vendor/lib/libthermalclient.so
@@ -651,7 +651,7 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# WiFi
+# WiFi - from Qualcomm
 vendor/bin/cnss-daemon
 
 # Widevine
