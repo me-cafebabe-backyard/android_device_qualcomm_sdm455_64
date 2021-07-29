@@ -163,6 +163,10 @@ BOARD_USES_QC_TIME_SERVICES := true
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
+ifeq ($(subst cherish_,,$(PRODUCT_NAME)),$(PRODUCT_DEVICE))
+-include device/cherish/sepolicy/qcom/sepolicy.mk
+endif
+
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
