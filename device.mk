@@ -16,6 +16,8 @@
 
 DEVICE_PATH := device/qualcomm/sdm455_64
 
+# APEX
+OVERRIDE_TARGET_FLATTEN_APEX := true
 # Disable APEX compression
 # Keep this after including updatable_apex.mk
 PRODUCT_COMPRESSED_APEX := false
