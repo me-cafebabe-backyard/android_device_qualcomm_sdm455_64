@@ -1,0 +1,3 @@
+# Graphics
+genfscon sysfs /class/lcd_bias/secure_mode		u:object_r:sysfs_graphics:s0
+genfscon sysfs /class/leds/wled/secure_mode		u:object_r:sysfs_graphics:s0
