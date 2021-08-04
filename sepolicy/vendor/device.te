@@ -1,0 +1,2 @@
+# Partitions
+type vendor_rawdump_block_device, dev_type;
