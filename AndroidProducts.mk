@@ -22,3 +22,10 @@ COMMON_LUNCH_CHOICES := \
     lineage_sdm455_64-user \
     lineage_sdm455_64-userdebug
 
+PRODUCT_MAKEFILES += \
+    $(LOCAL_DIR)/revengeos_sdm455_64.mk
+
+COMMON_LUNCH_CHOICES += \
+    revengeos_sdm455_64-eng \
+    revengeos_sdm455_64-user \
+    revengeos_sdm455_64-userdebug
