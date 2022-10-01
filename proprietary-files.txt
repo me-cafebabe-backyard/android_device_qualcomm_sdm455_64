@@ -553,20 +553,6 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 
-# Keymaster (firmware - QSECOM)
-vendor/firmware/cmnlib.b00
-vendor/firmware/cmnlib.b02
-vendor/firmware/cmnlib.b03
-vendor/firmware/cmnlib.b04
-vendor/firmware/cmnlib.b05
-vendor/firmware/cmnlib.b06
-vendor/firmware/cmnlib64.b00
-vendor/firmware/cmnlib64.b02
-vendor/firmware/cmnlib64.b03
-vendor/firmware/cmnlib64.b04
-vendor/firmware/cmnlib64.b05
-vendor/firmware/cmnlib64.b06
-
 # Listen
 vendor/lib/hw/sound_trigger.primary.sdm660.so
 vendor/lib/libadpcmdec.so
