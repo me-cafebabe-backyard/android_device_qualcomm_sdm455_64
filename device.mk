@@ -82,8 +82,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_system=true
 
 PRODUCT_PACKAGES += \
-    otapreopt_script \
-    cppreopts.sh
+    otapreopt_script
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
