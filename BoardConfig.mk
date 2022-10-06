@@ -106,6 +106,9 @@ TARGET_KERNEL_CONFIG := sdm455-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/qualcomm/sdm660-4.4
 TARGET_KERNEL_CLANG_COMPILE := true
 
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := device/qualcomm/kernel-sdm455_64/Image.gz-dtb
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
