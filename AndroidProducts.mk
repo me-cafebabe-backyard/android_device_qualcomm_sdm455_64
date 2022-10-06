@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_sdm455_64.mk
+    $(LOCAL_DIR)/miku_sdm455_64.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_sdm455_64-eng \
-    lineage_sdm455_64-user \
-    lineage_sdm455_64-userdebug
+    miku_sdm455_64-eng \
+    miku_sdm455_64-user \
+    miku_sdm455_64-userdebug
 

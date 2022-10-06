@@ -22,19 +22,15 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Set Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Miku stuff.
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
 # Inherit from device
 $(call inherit-product, device/qualcomm/sdm455_64/device.mk)
 
 DEVICE_PATH := device/qualcomm/sdm455_64
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay-lineage
-
-PRODUCT_NAME := lineage_sdm455_64
+PRODUCT_NAME := miku_sdm455_64
 PRODUCT_DEVICE := sdm455_64
 PRODUCT_MANUFACTURER := Qualcomm
 PRODUCT_BRAND := Qualcomm
