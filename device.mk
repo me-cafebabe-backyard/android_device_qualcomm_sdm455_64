@@ -183,7 +183,6 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-service.software \
     android.hardware.gatekeeper@1.0.vendor
 
 # FM
