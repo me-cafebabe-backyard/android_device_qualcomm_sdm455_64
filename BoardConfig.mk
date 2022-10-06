@@ -86,6 +86,9 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
+# HW FDE
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom \
