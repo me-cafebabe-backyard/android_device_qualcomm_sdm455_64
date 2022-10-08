@@ -431,3 +431,6 @@ PRODUCT_COPY_FILES += \
 # Extra
 EXTRA_DEVICE_BRACKET := mid-range
 PRODUCT_EXCLUDE_IH8SN := true
+
+# Inherit extra if exists
+$(call inherit-product-if-exists, vendor/extra/product.mk)
