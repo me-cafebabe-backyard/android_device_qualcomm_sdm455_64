@@ -143,3 +143,7 @@ ro.wifi.power.reduction=1
 
 # WiFi Calling
 persist.dbg.wfc_avail_ovr=1
+
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
